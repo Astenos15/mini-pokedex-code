@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: black;
+}
+
+.pokemon-container {
+  background: linear-gradient(#c92a2a 50%, #f8f9fa 50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #f8f9fa;
+  border-radius: 35rem;
+  width: 68rem;
+  height: 66rem;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.poke-img {
+  background-color: #f8f9fa;
+  height: 25rem;
+  width: 25rem;
+  border: 3px solid black;
+  border-radius: 1000px;
+  padding: 0.2rem;
+
+  position: absolute;
+  top: 41%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.info-container {
+  display: flex;
+  position: absolute;
+  gap: 1rem;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.info-box {
+  padding: 1.2rem;
+  border-radius: 1rem;
+  width: 50%;
+  font-size: 1.6rem;
+  border: 1px solid black;
+}
+.info-text {
+  border: 1px solid black;
+  border-radius: 1rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+  padding: 1rem;
+  width: 50%;
+}
+.name {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+.description {
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+.details {
+  font-weight: 300;
+}
+.element {
+  text-transform: capitalize;
+}
+
+.form-container {
+  margin-top: 1.5rem;
+
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.input {
+  border: 1px solid black;
+  border-radius: 2px;
+  margin-right: 0.6rem;
+  height: 2.5rem;
+  width: 14rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+  padding: 0.2rem 0.8rem;
+}
+
+.btn {
+  background-color: black;
+  color: #f8f9fa;
+  cursor: pointer;
+  padding: 0.4rem 2.4rem;
+  font-size: 1.1rem;
+  border-radius: 2px;
+  border: none;
+  font-size: 1.6rem;
+  transition: all 0.2s;
+}
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  color: #2596be;
+}
+.btn:active {
+  transform: scale(1);
+  box-shadow: none;
+  color: red;
+}
+
+.no-search {
+  width: 50%;
+}
+
+/* Media Queries */
+
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media (max-width: 36em) {
+  html {
+    font-size: 30%;
+  }
+
+  .input {
+    height: 3rem;
+  }
+
+  .btn {
+    font-size: 1.8rem;
+  }
+}
